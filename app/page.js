@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -29,10 +30,14 @@ export default function Home() {
       </div> */}
       <nav>
         <ul className="flex">
-          <li className="px-2 cursor-pointer hover:text-black hover:bg-white hover:bg-opacity-50">Home</li>
-          <li className="px-2 cursor-pointer hover:text-black hover:bg-white hover:bg-opacity-50">About</li>
+          <Link href="/" className="li">Home</Link>
+          <Link href="/about"  className="li">About</Link>
+          <Link href="/contact"  className="li">Contact</Link>
+          <Link href="/blog"  className="li">Blogs</Link>
+          
+          {/* <li className="px-2 cursor-pointer hover:text-black hover:bg-white hover:bg-opacity-50">About</li>
           <li className="px-2 cursor-pointer hover:text-black hover:bg-white hover:bg-opacity-50">Contact</li>
-          <li className="px-2 cursor-pointer hover:text-black hover:bg-white hover:bg-opacity-50  ">Blogs</li>
+          <li className="px-2 cursor-pointer hover:text-black hover:bg-white hover:bg-opacity-50  ">Blogs</li> */}
         </ul>
       </nav>
 
@@ -45,75 +50,75 @@ export default function Home() {
           height={37}
           priority
         /> */}
-        <h1 className="text-5xl">Daily blogs</h1>
+        <h1 className="text-5xl">Daily Blogs</h1>
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="http://localhost:3000/blog/1"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
+          Exploring the Hidden Gems of Kyoto: A Travelers Guide{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+          Discover the serene temples, charming streets, and lesser-known spots in Kyoto that promise an unforgettable experience. This guide will help you uncover the beauty and tranquility of Japan’s ancient capital
           </p>
         </a>
 
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="http://localhost:3000/blog/2"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
+          The Future of AI: How Artificial Intelligence is Transforming Industries{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          Dive into the world of artificial intelligence and explore its impact on various sectors, from healthcare to finance. Learn about the latest trends, challenges, and opportunities in the evolving AI landscape.
           </p>
         </a>
 
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="http://localhost:3000/blog/3"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
+          Mastering the Art of Minimalist Living: Tips for a Simpler Life{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
+          Embrace minimalism with practical tips and tricks to declutter your home, simplify your routine, and enhance your overall well-being. This guide will help you find peace and purpose in a clutter-free life.
           </p>
         </a>
 
         <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="http://localhost:3000/blog/4"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
+          // target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
+          A Culinary Journey Through Tuscany: Authentic Recipes and Stories{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          Join us on a flavorful journey through Tuscany as we explore traditional recipes, local ingredients, and the rich culinary heritage of this picturesque region. Get inspired to cook with passion and savor the taste of Italy.
           </p>
         </a>
       </div>

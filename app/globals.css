@@ -27,7 +27,7 @@ body {
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .li {
+   @apply px-2 cursor-pointer hover:text-black hover:bg-white hover:bg-opacity-50
   }
 }
