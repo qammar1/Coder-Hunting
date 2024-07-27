@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/(components)/complex-dashboard/page.js"  ],
   "exclude": [
     "node_modules"
   ]
